@@ -2,11 +2,17 @@
 Steps to install:
 --In the command prompt/terminal:
 1- Run 'Yarn install' in project directory
+
 2- Run 'cd ios && pod install', using cocoapods 
+
 3- Run 'pod update'
+
 4- cd .. back to project directory 
+
 5- Run 'react-native link'
+
 6- Run 'react-native link react-native-photoeditorsdk'
+
 # To test in development mode:
 1- Make sure you have expo-cli installed globbaly with running 'Yarn global add expo-cli' in the command prompt/terminal
 2- Run 'expo start' in project directory, this will start the metro bundler to serve the JS code
