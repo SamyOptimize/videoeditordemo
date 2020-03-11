@@ -1,6 +1,7 @@
 # photoeditordemo
 Steps to install:
 --In the command prompt/terminal:
+
 1- Run 'Yarn install' in project directory
 
 2- Run 'cd ios && pod install', using cocoapods 
