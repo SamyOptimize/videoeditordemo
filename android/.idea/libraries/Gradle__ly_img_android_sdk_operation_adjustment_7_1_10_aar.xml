@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ly.img.android.sdk.operation:adjustment:7.1.10@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9bd7ab45ed9895f0b4dccb1849cad28/jetified-adjustment-7.1.10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9bd7ab45ed9895f0b4dccb1849cad28/jetified-adjustment-7.1.10/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ly.img.android.sdk.operation/adjustment/7.1.10/c37a3c6963b5d9c301bef5eb228051d71cc34ec5/adjustment-7.1.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

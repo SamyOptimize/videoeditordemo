@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ly.img.android.sdk.assets:font-basic:7.1.10@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e82b267b1d3bbc4376a4d45c5a318ec6/font-basic-7.1.10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e82b267b1d3bbc4376a4d45c5a318ec6/font-basic-7.1.10/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ly.img.android.sdk.assets/font-basic/7.1.10/a32789a8d2f8b46a795131060212d883cf1ec43b/font-basic-7.1.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
