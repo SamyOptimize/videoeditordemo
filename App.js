@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View, Image, Button } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { PESDK, Configuration, TintMode } from "react-native-photoeditorsdk";
+import * as ImageManipulator from "expo-image-manipulator";
 
 export default class App extends Component {
-  state = { imageUri: "null" };
+  state = { imageUri: "null", width: 0, height: 0 };
   pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: "Images",
@@ -20,7 +21,7 @@ export default class App extends Component {
     let configuration: Configuration = {
       forceCrop: true,
       transform: {
-        items: [{ width: 9, height: 16 }]
+        items: [{ width: 1, height: 1 }]
       },
       sticker: {
         personalStickers: true,
@@ -50,9 +51,14 @@ export default class App extends Component {
     };
 
     if (result && !result.cancelled) {
-      PESDK.openEditor(result.uri, configuration).then(editedImage => {
+      PESDK.openEditor(result.uri, configuration).then(async editedImage => {
+        editedImage = await ImageManipulator.manipulateAsync(editedImage.image);
+        console.log(editedImage);
+
         this.setState({
-          imageUri: editedImage.image
+          imageUri: editedImage.uri,
+          width: editedImage.width,
+          height: editedImage.height
         });
       });
     }
@@ -62,6 +68,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Image source={{ uri: this.state.imageUri }} style={styles.image} />
         <Button title="Choose image" onPress={this.editImage} />
+        <Text>{`Width: ${this.state.width}, Height: ${this.state.height}`}</Text>
       </View>
     );
   }

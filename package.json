@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "expo": "~36.0.0",
+    "expo-image-manipulator": "^8.0.0",
     "expo-image-picker": "^8.0.2",
     "expo-permissions": "^8.0.0",
     "expokit": "36.0.1",
