@@ -8,6 +8,10 @@ PODS:
     - Fabric (~> 1.10.2)
   - DoubleConversion (1.1.6)
   - EXAppLoaderProvider (8.0.0)
+  - EXAV (8.1.0):
+    - UMCore
+    - UMFileSystemInterface
+    - UMPermissionsInterface
   - EXConstants (8.0.0):
     - UMConstantsInterface
     - UMCore
@@ -98,11 +102,11 @@ PODS:
   - GoogleMaps/Base (3.8.0)
   - GoogleMaps/Maps (3.8.0):
     - GoogleMaps/Base
-  - imglyKit (10.7.4)
+  - imglyKit (10.11.0)
   - JKBigInteger2 (0.0.5)
   - lottie-ios (2.5.3)
-  - PhotoEditorSDK (10.7.4):
-    - imglyKit (= 10.7.4)
+  - PhotoEditorSDK (10.11.0):
+    - imglyKit (= 10.11.0)
   - RCTRequired (0.61.4)
   - RCTTypeSafety (0.61.4):
     - FBLazyVector (= 0.61.4)
@@ -305,6 +309,10 @@ PODS:
     - PhotoEditorSDK (~> 10.7)
     - React
     - React-RCTImage
+  - RNVideoEditorSDK (2.4.1):
+    - React
+    - React-RCTImage
+    - VideoEditorSDK (~> 10.9)
   - UMBarCodeScannerInterface (5.0.0)
   - UMCameraInterface (5.0.0)
   - UMConstantsInterface (5.0.0)
@@ -320,11 +328,14 @@ PODS:
     - UMFontInterface
   - UMSensorsInterface (5.0.0)
   - UMTaskManagerInterface (5.0.0)
+  - VideoEditorSDK (10.11.0):
+    - imglyKit (= 10.11.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXAppLoaderProvider (from `../node_modules/expo-app-loader-provider/ios`)
+  - EXAV (from `../node_modules/expo-av/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXErrorRecovery (from `../node_modules/expo-error-recovery/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
@@ -365,6 +376,7 @@ DEPENDENCIES:
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNPhotoEditorSDK (from `../node_modules/react-native-photoeditorsdk`)
+  - RNVideoEditorSDK (from `../node_modules/react-native-videoeditorsdk`)
   - UMBarCodeScannerInterface (from `../node_modules/unimodules-barcode-scanner-interface/ios`)
   - UMCameraInterface (from `../node_modules/unimodules-camera-interface/ios`)
   - UMConstantsInterface (from `../node_modules/unimodules-constants-interface/ios`)
@@ -392,6 +404,7 @@ SPEC REPOS:
     - JKBigInteger2
     - lottie-ios
     - PhotoEditorSDK
+    - VideoEditorSDK
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -399,6 +412,9 @@ EXTERNAL SOURCES:
   EXAppLoaderProvider:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-app-loader-provider/ios"
+  EXAV:
+    :path: !ruby/object:Pathname
+    path: "../node_modules/expo-av/ios"
   EXConstants:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-constants/ios"
@@ -486,6 +502,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNPhotoEditorSDK:
     :path: "../node_modules/react-native-photoeditorsdk"
+  RNVideoEditorSDK:
+    :path: "../node_modules/react-native-videoeditorsdk"
   UMBarCodeScannerInterface:
     :path: !ruby/object:Pathname
     path: "../node_modules/unimodules-barcode-scanner-interface/ios"
@@ -537,6 +555,7 @@ SPEC CHECKSUMS:
   Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   EXAppLoaderProvider: ebdb6bc2632c1ccadbe49f5e4104d8d690969c49
+  EXAV: 2edd9cd30fe98d04b55325303c7ff01db02d1d0f
   EXConstants: 4051b16c17ef3defa03c541d42811dc92b249146
   EXErrorRecovery: d36db99ec6a3808f313f01b0890eb443796dd1c2
   EXFileSystem: 6e0d9bb6cc4ea404dbb8f583c1a8a2dcdf4b83b6
@@ -557,10 +576,10 @@ SPEC CHECKSUMS:
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
   Google-Maps-iOS-Utils: c32891ff472eaaa1fca032beedafa1a013af7875
   GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
-  imglyKit: 4fb44cced73ef09ae16655e8650c94f9073345a9
+  imglyKit: 1833a7f374005ea9483eb050f1bca80894bcadef
   JKBigInteger2: e91672035c42328c48b7dd015b66812ddf40ca9b
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
-  PhotoEditorSDK: 5b97ccf0ecd0e6a339ac6caa465005f1fe7a10f4
+  PhotoEditorSDK: 19b064295d525181e18337c4223e7c7777158d0b
   RCTRequired: f3b3fb6f4723e8e52facb229d0c75fdc76773849
   RCTTypeSafety: 2ec60de6abb1db050b56ecc4b60188026078fd10
   React: 10e0130b57e55a7cd8c3dee37c1261102ce295f4
@@ -581,6 +600,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 0f76400ee3cec6edb9c125da49fed279340d145a
   ReactCommon: a6a294e7028ed67b926d29551aa9394fd989c24c
   RNPhotoEditorSDK: 19574d5c0539e61981f6485b0c79760433f426a4
+  RNVideoEditorSDK: b6a37771bd9a38565913f99f13976849054d4c0e
   UMBarCodeScannerInterface: 3802c8574ef119c150701d679ab386e2266d6a54
   UMCameraInterface: 985d301f688ed392f815728f0dd906ca34b7ccb1
   UMConstantsInterface: bda5f8bd3403ad99e663eb3c4da685d063c5653c
@@ -593,8 +613,9 @@ SPEC CHECKSUMS:
   UMReactNativeAdapter: 230406e3335a8dbd4c9c0e654488a1cf3b44552f
   UMSensorsInterface: d708a892ef1500bdd9fc3ff03f7836c66d1634d3
   UMTaskManagerInterface: a98e37a576a5220bf43b8faf33cfdc129d2f441d
+  VideoEditorSDK: a3b8eafcbdd426c522f8670b23c0eb2f33aa2306
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
-PODFILE CHECKSUM: 79f497abd0e5c2a4b987ec70d1e14f12620ac705
+PODFILE CHECKSUM: 896ccd07a78196b16dd5360f9e90a2661fa76bba
 
 COCOAPODS: 1.8.4

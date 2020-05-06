@@ -2195,6 +2195,14 @@ expo-asset@~8.0.0:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
+expo-av@^8.0.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-8.1.0.tgz#376e2a821168cd83e997c6dd84350fab6b293f10"
+  integrity sha512-owWxOCyK+dPyT3pF4rDOf2W8Sn8LSEvfw1HvU9xM0wzH7xF0bw3Zs3wcXxvtfhnXAZ5dCDQfvZI5cXk+lml+IQ==
+  dependencies:
+    lodash "^4.17.15"
+    nullthrows "^1.1.0"
+
 expo-constants@~8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-8.0.0.tgz#e2c5a072dacb4263ccfc57dcb4835ca791960d48"
@@ -4221,6 +4229,11 @@ react-native-unimodules@^0.7.0:
     unimodules-permissions-interface "~5.0.0"
     unimodules-sensors-interface "~5.0.0"
     unimodules-task-manager-interface "~5.0.0"
+
+react-native-videoeditorsdk@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-videoeditorsdk/-/react-native-videoeditorsdk-2.4.1.tgz#4f4d80eefd89fbfba192a7f1ced1945b3b4f2d66"
+  integrity sha512-lQWUp0lQjWT53Fq6XYPF9zA0SbR4tPyDaO/v3DTX5zDxRGI6wO+hEA8LZiHE+SE76KzfYmlH8xNKMSYGXqlCBQ==
 
 react-native-view-shot@3.0.2:
   version "3.0.2"
