@@ -9,6 +9,6 @@
 	<key>manifestUrl</key>
 	<string>exp://exp.host/@samyoptimize/photoEditor_demo</string>
 	<key>releaseChannel</key>
-	<string>default</string>
+	<string>photoeditor_demo</string>
 </dict>
 </plist>

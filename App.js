@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, Image, Button } from "react-native";
 import * as ImagePicker from "expo-image-picker";
-import { VESDK, Configuration } from "react-native-videoeditorsdk";
+import {
+  VESDK,
+  Configuration,
+  SerializationExportType,
+} from "react-native-videoeditorsdk";
 import * as ImageManipulator from "expo-image-manipulator";
 import { Video } from "expo-av";
 
@@ -19,10 +23,18 @@ export default class App extends Component {
 
   editImage = async () => {
     let result = await this.pickImage();
+    console.log(result);
+
     let configuration: Configuration = {
       forceCrop: true,
       transform: {
         items: [{ width: 1, height: 1 }],
+      },
+      export: {
+        serialization: {
+          enabled: true,
+          exportType: SerializationExportType.OBJECT,
+        },
       },
       sticker: {
         personalStickers: true,
@@ -51,13 +63,15 @@ export default class App extends Component {
     };
 
     if (result && !result.cancelled) {
-      VESDK.openEditor(result.uri, configuration).then(async (editedImage) => {
-        console.log(editedImage);
+      VESDK.openEditor({ uri: result.uri }, configuration).then(
+        async (editedImage) => {
+          console.log(editedImage);
 
-        this.setState({
-          imageUri: editedImage.video,
-        });
-      });
+          this.setState({
+            imageUri: editedImage.video,
+          });
+        }
+      );
     }
   };
   render() {

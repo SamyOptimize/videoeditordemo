@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: ly.img.android:authorization:7.1.0.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5a2b313ff153a596de61e1c9294d7665/jetified-authorization-7.1.0.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5a2b313ff153a596de61e1c9294d7665/jetified-authorization-7.1.0.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85137f48f9477a0fa2e6492daaa9c947/jetified-authorization-7.1.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85137f48f9477a0fa2e6492daaa9c947/jetified-authorization-7.1.0.4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

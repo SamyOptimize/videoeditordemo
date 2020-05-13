@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.Raizlabs.DBFlow:dbflow:4.2.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ab9e4306d4d86776f824b84ad8c27e4/jetified-dbflow-4.2.4/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/650fbc83a862eb0190ab108083a4dd8f/jetified-dbflow-4.2.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ab9e4306d4d86776f824b84ad8c27e4/jetified-dbflow-4.2.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ab9e4306d4d86776f824b84ad8c27e4/jetified-dbflow-4.2.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/650fbc83a862eb0190ab108083a4dd8f/jetified-dbflow-4.2.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/650fbc83a862eb0190ab108083a4dd8f/jetified-dbflow-4.2.4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
