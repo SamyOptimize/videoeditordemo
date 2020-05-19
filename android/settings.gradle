@@ -1,4 +1,6 @@
 include ':app'
+include ':react-native-ffmpeg'
+project(':react-native-ffmpeg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-ffmpeg/android')
 include ':react-native-videoeditorsdk'
 project(':react-native-videoeditorsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-videoeditorsdk/android')
 include ':react-native-photoeditorsdk'

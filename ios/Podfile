@@ -29,6 +29,8 @@ target 'blank-template' do
 
   pod 'RNVideoEditorSDK', :path => '../node_modules/react-native-videoeditorsdk'
 
+  pod 'react-native-ffmpeg', :path => '../node_modules/react-native-ffmpeg'
+
   post_install do |installer|
     installer.pods_project.main_group.tab_width = '2';
     installer.pods_project.main_group.indent_width = '2';

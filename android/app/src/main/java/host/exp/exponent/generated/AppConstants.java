@@ -29,10 +29,14 @@ public class AppConstants {
       
       
       
+      
+      
+      
+      
       // ADD EMBEDDED RESPONSES HERE
       // START EMBEDDED RESPONSES
       embeddedResponses.add(new Constants.EmbeddedResponse("https://exp.host/@samyoptimize/photoEditor_demo", "assets://shell-app-manifest.json", "application/json"));
-      embeddedResponses.add(new Constants.EmbeddedResponse("https://d1wp6m56sqw74a.cloudfront.net/%40samyoptimize%2FphotoEditor_demo%2F1.0.0%2Ffb4b8ef6e7630aae57c89308480a9ba3-36.0.0-android.js", "assets://shell-app.bundle", "application/javascript"));
+      embeddedResponses.add(new Constants.EmbeddedResponse("https://d1wp6m56sqw74a.cloudfront.net/%40samyoptimize%2FphotoEditor_demo%2F1.0.0%2F436e36a6b798b319b2b3d7bc2f9ed7fc-36.0.0-android.js", "assets://shell-app.bundle", "application/javascript"));
       // END EMBEDDED RESPONSES
     EMBEDDED_RESPONSES = embeddedResponses;
   }

@@ -130,6 +130,7 @@ apply from: 'expo.gradle'
 apply from: "../../node_modules/react-native-unimodules/gradle.groovy"
 
 dependencies {
+    implementation project(':react-native-ffmpeg')
     implementation project(':react-native-videoeditorsdk')
     implementation project(':react-native-photoeditorsdk')
   implementation fileTree(dir: 'libs', include: ['*.jar'])

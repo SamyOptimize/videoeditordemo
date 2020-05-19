@@ -105,6 +105,7 @@ PODS:
   - imglyKit (10.11.0)
   - JKBigInteger2 (0.0.5)
   - lottie-ios (2.5.3)
+  - mobile-ffmpeg-https (4.3.1)
   - PhotoEditorSDK (10.11.0):
     - imglyKit (= 10.11.0)
   - RCTRequired (0.61.4)
@@ -270,6 +271,12 @@ PODS:
     - React-cxxreact (= 0.61.4)
     - React-jsi (= 0.61.4)
   - React-jsinspector (0.61.4)
+  - react-native-ffmpeg (0.4.4):
+    - React
+    - react-native-ffmpeg/https (= 0.4.4)
+  - react-native-ffmpeg/https (0.4.4):
+    - mobile-ffmpeg-https (= 4.3.1)
+    - React
   - React-RCTActionSheet (0.61.4):
     - React-Core/RCTActionSheetHeaders (= 0.61.4)
   - React-RCTAnimation (0.61.4):
@@ -364,6 +371,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-ffmpeg (from `../node_modules/react-native-ffmpeg`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -403,6 +411,7 @@ SPEC REPOS:
     - imglyKit
     - JKBigInteger2
     - lottie-ios
+    - mobile-ffmpeg-https
     - PhotoEditorSDK
     - VideoEditorSDK
 
@@ -480,6 +489,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-ffmpeg:
+    :path: "../node_modules/react-native-ffmpeg"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -579,6 +590,7 @@ SPEC CHECKSUMS:
   imglyKit: 1833a7f374005ea9483eb050f1bca80894bcadef
   JKBigInteger2: e91672035c42328c48b7dd015b66812ddf40ca9b
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  mobile-ffmpeg-https: c4a3c255163ddb1abc4b4dfc613c2d885f8c46eb
   PhotoEditorSDK: 19b064295d525181e18337c4223e7c7777158d0b
   RCTRequired: f3b3fb6f4723e8e52facb229d0c75fdc76773849
   RCTTypeSafety: 2ec60de6abb1db050b56ecc4b60188026078fd10
@@ -589,6 +601,7 @@ SPEC CHECKSUMS:
   React-jsi: ca921f4041505f9d5197139b2d09eeb020bb12e8
   React-jsiexecutor: 8dfb73b987afa9324e4009bdce62a18ce23d983c
   React-jsinspector: d15478d0a8ada19864aa4d1cc1c697b41b3fa92f
+  react-native-ffmpeg: f9a60452aaa5d478aac205b248224994f3bde416
   React-RCTActionSheet: 7369b7c85f99b6299491333affd9f01f5a130c22
   React-RCTAnimation: d07be15b2bd1d06d89417eb0343f98ffd2b099a7
   React-RCTBlob: 8e0b23d95c9baa98f6b0e127e07666aaafd96c34
@@ -616,6 +629,6 @@ SPEC CHECKSUMS:
   VideoEditorSDK: a3b8eafcbdd426c522f8670b23c0eb2f33aa2306
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
-PODFILE CHECKSUM: 896ccd07a78196b16dd5360f9e90a2661fa76bba
+PODFILE CHECKSUM: 4469dce49e2616d9f288f5d49332b65f33551aa4
 
 COCOAPODS: 1.8.4

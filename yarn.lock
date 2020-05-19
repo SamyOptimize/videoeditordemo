@@ -4201,6 +4201,11 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.0.tgz#0f37c3613c34fe6b37cd7f763a0d6293ab15c527"
   integrity sha512-GFMtL0vHkiBv9HluwNZTggSn/sCyEt9n02aM0dSAjGGyqyNlAyftYm4phPxdvCigG15JreC5biwxCgTAJZ7yAA==
 
+react-native-ffmpeg@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/react-native-ffmpeg/-/react-native-ffmpeg-0.4.4.tgz#9f4dbda53c96078cecbbe83a866d4b535b957131"
+  integrity sha512-MUBV3Xvto1Hl049Y9EaOZdjazkK1ixQzCzPEt1o7V2duSOrM2kJ2o/RiC4rSRgapU2uqYRHMZ6X4JJI7y40qXw==
+
 react-native-photoeditorsdk@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/react-native-photoeditorsdk/-/react-native-photoeditorsdk-2.3.2.tgz#26df604c96b3d779260905d6cfd526da4427ad75"
