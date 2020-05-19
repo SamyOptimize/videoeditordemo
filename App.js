@@ -20,7 +20,7 @@ import { Video } from "expo-av";
 import { RNFFprobe } from "react-native-ffmpeg";
 
 export default class App extends Component {
-  state = { imageUri: "null", width: 0, height: 0 };
+  state = { imageUri: null, width: 0, height: 0 };
   pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: "Videos",
@@ -95,7 +95,11 @@ export default class App extends Component {
             height: newResult.streams[Platform.OS === "android" ? 1 : 0].height,
           };
           this.setState({
-            imageUri: editedImage.video,
+            imageUri: editedImage.hasChanges
+              ? editedImage.video
+                ? editedImage.video
+                : editedImage.image
+              : result.uri,
             width: newResult.width,
             height: newResult.height,
           });
@@ -113,6 +117,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Video source={{ uri: this.state.imageUri }} style={styles.image} />
         <Button title="Choose Video" onPress={this.editImage} />
+        <Text>{`${this.state.imageUri ? "Video selected" : "No video"}`}</Text>
         <Text>{`width:${this.state.width}-height:${this.state.height}`}</Text>
       </View>
     );
